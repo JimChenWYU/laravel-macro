@@ -8,11 +8,23 @@ Laravel Macro Helper
 $ composer require jimchen/laravel-macro -vvv
 ```
 
+The package will automatically register itself.
+
+If you use Laravel 5.1.*, you can add the service provider to the providers array in `config/app.php`.
+
+```php
+JimChen\Macro\LaravelMacroServiceProvider::class,
+```
+
 ## Usage
+
+You should publish the config file to add macros.
 
 ```bash
 $ php artisan vendor:publish --provider="JimChen\Macro\LaravelMacroServiceProvider"
 ```
+
+Binding macro class to macroable class in config file.
 
 `config/macro.php`
 ```php
@@ -24,6 +36,8 @@ return [
     ],
 ];
 ```
+
+Define macro file.
 
 `app/Macros/Arr1.php`
 ```php
@@ -37,6 +51,8 @@ class Arr
     }
 }
 ```
+
+Using in anywhere if you need. Great!
 
 `app/routes/web.php`
 ```php
