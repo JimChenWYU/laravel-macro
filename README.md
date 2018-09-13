@@ -14,7 +14,7 @@ $ composer require jimchen/laravel-macro -vvv
 $ php artisan vendor:publish --provider="JimChen\Macro\LaravelMacroServiceProvider"
 ```
 
-`app/config/macro.php`
+`config/macro.php`
 ```php
 return [
     'macros' => [
