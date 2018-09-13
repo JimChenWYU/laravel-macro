@@ -134,7 +134,7 @@ class MacroClass
         return self::bar();
     }
 
-    protected function bar()
+    protected static function bar()
     {
         return 'bar';
     }
