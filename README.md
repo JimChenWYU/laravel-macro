@@ -1,5 +1,7 @@
 # laravel-macro
 
+[![Build Status](https://img.shields.io/travis/JimChenWYU/laravel-macro/master.svg?style=flat-square)](https://travis-ci.org/JimChenWYU/laravel-macro)
+
 Laravel Macro Helper
 
 ## Installing
