@@ -24,9 +24,8 @@ You should publish the config file to add macros.
 $ php artisan vendor:publish --provider="JimChen\Macro\LaravelMacroServiceProvider"
 ```
 
-Binding macro class to macroable class in config file.
+Binding macro class to macroable class in `config/macro.php`.
 
-`config/macro.php`
 ```php
 return [
     'macros' => [
@@ -37,9 +36,8 @@ return [
 ];
 ```
 
-Define macro file.
+Define macro file, `app/Macros/Arr1.php`.
 
-`app/Macros/Arr1.php`
 ```php
 namespace App\Macro;
 
@@ -54,7 +52,8 @@ class Arr
 
 Using in anywhere if you need. Great!
 
-`app/routes/web.php`
+For example in `app/routes/web.php`
+
 ```php
 use Illuminate\Support\Arr;
 
